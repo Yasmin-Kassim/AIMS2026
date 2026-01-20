@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMS 2026: AI for Multimodal Science | UCSD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">AIMS 2026</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#venue">Venue</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-details">
+                <div class="detail-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>June 23-25, 2026</span>
+                </div>
+                <div class="detail-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>UC San Diego</span>
+                </div>
+            </div>
+            <p class="hero-description">
+                A three-day workshop exploring the intersection of artificial intelligence and multimodal scientific research
+            </p>
+        </div>
+        <div class="hero-scroll">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About AIMS2026</h2>
+            <div class="about-content">
+                <p class="lead">
+                    AIMS2026 (AI for Multimodal Science) is a three-day interdisciplinary workshop that brings together 
+                    Schmidt Science Fellows from around the world and UC San Diego postdoctoral researchers to explore how 
+                    multimodal artificial intelligence can accelerate discovery across scientific domains.
+                </p>
+                <p>
+                    Multimodal AI sits at the forefront of modern research, enabling the integration of heterogeneous data 
+                    types—such as images, time series, text, graphs, and simulations—to address complex scientific questions. 
+                    These methods cut across biology, medicine, climate science, physics, materials science, and computer 
+                    vision, where insights increasingly emerge from the fusion of multiple data modalities rather than from 
+                    any single source alone.
+                </p>
+                <p>
+                    While scientific datasets are often domain-specific, the core principles of multimodal fusion are broadly 
+                    transferable. AIMS2026 emphasizes both <strong>data-level multimodality</strong> and 
+                    <strong>architecture-level multimodality</strong>. By focusing on generalizable fusion patterns and model 
+                    designs, the workshop equips participants with approaches that can be readily adapted across 
+                    disciplines—simply by swapping in their own domain's data, tasks, and evaluation metrics.
+                </p>
+                <p>
+                    Through a combination of lectures, hands-on sessions, and collaborative discussions, AIMS2026 aims to 
+                    foster a shared technical language for multimodal AI in science, build cross-domain connections among 
+                    early-career researchers, and empower participants to apply state-of-the-art multimodal methods to their 
+                    own research challenges.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Daily Schedule</h2>
+            
+            <!-- Daily Schedule Overview -->
+            <div class="schedule-overview">
+                <div class="schedule-item">
+                    <div class="time">8:00 AM - 9:00 AM</div>
+                    <div class="event">
+                        <h4>Breakfast</h4>
+                        <p>Light breakfast, badge and gift distribution</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">9:00 AM - 12:00 PM</div>
+                    <div class="event">
+                        <h4>Faculty, Industry, and Lightning Talks</h4>
+                        <p><strong>Day 1:</strong> Three long-format talks (45 min + 5 min Q&A each), with short breaks.</p>
+                        <p><strong>Days 2 & 3:</strong> Two long-format talks, followed by four lightning talks by participants (15 min each).</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">12:00 PM - 1:00 PM</div>
+                    <div class="event">
+                        <h4>Lunch</h4>
+                        <p>Catered lunch and networking</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">1:00 PM - 2:30 PM</div>
+                    <div class="event">
+                        <h4>Demo / Coding Tutorial</h4>
+                        <p>Example topics:</p>
+                        <ul class="schedule-list">
+                            <li>Comparing single-modality vs. multimodal training results</li>
+                            <li>Strategies for data fusion (early, intermediate, late)</li>
+                            <li>Handling missing modalities and cross-modal alignment</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">2:30 PM - 3:00 PM</div>
+                    <div class="event">
+                        <h4>Afternoon Break</h4>
+                        <p>Coffee, tea, juice, and light snacks</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">3:00 PM - 5:00 PM</div>
+                    <div class="event">
+                        <h4>Afternoon Block</h4>
+                        <p>Hackathon (max ~25 participants) or Alternative Activities (max ~25 participants)</p>
+                        <p class="schedule-note">Room layout: Alternative activities will be in Room 15A, whereas Hackathon will be in Room 15B.</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="time">5:30 PM - 7:00 PM</div>
+                    <div class="event">
+                        <h4>Social Events</h4>
+                        <p>See details below</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hackathon Section -->
+            <div class="schedule-detail-section">
+                <h3 class="detail-section-title">Hackathon Overview</h3>
+                <p class="detail-section-subtitle">Maximum ~25 participants</p>
+                <div class="detail-content">
+                    <p><strong>Purpose:</strong> Fun, hands-on, educational; light prizes for all participating teams.</p>
+                    <p><strong>Teams:</strong> 4–5 teams (4–5 participants each; max ~25). Teams may self-organize, or organizers can assist.</p>
+                    <p><strong>Resources:</strong> Starter datasets with train/test splits, baseline code to lower barriers, and volunteer mentors for troubleshooting.</p>
+                    <p><strong>Objectives:</strong> Extend or improve an existing model by:</p>
+                    <ul class="schedule-list">
+                        <li>Tuning training parameters</li>
+                        <li>Trying alternative loss functions</li>
+                        <li>Integrating a new modality into training</li>
+                    </ul>
+                    <p><strong>Potential Datasets for Demo / Hackathon:</strong> Human Cell Atlas (HCA), TCGA Multi-Omics + Histopathology, MODIS / Sentinel, Global Fire Emissions Database (GFED), Materials Project, CORD-19 / PubMed Figures, Classic Failsafe Dataset.</p>
+                </div>
+            </div>
+
+            <!-- Alternative Activities Section -->
+            <div class="schedule-detail-section">
+                <h3 class="detail-section-title">Alternative Activities During Hackathon</h3>
+                <p class="detail-section-subtitle">Maximum ~25 participants</p>
+                <div class="detail-content">
+                    <div class="activity-day">
+                        <h4>Day 1: Paper Discussion Tables</h4>
+                        <p>Bring-Your-Own Paper (participant-driven): Each participant selects a multimodal AI–relevant paper, drafts brief notes/questions (e.g., on fusion strategies, evaluation, failure modes), and shares at round tables. A moderator (organizer) ensures balanced discussion.</p>
+                    </div>
+                    
+                    <div class="activity-day">
+                        <h4>Day 2: Grant & Fellowship Writing — From Specific Aims to Storytelling</h4>
+                        <p>Led by a professional writing coach. Structured exercises, peer feedback, and short coaching rounds help participants draft or revise sections of proposals and research statements, with optional prompts focused on multimodal AI research (e.g., framing interdisciplinary datasets, highlighting integration of methods, or articulating broader impacts).</p>
+                    </div>
+                    
+                    <div class="activity-day">
+                        <h4>Day 3: Interactive Q&A Panel</h4>
+                        <p>Participants draw prepared question cards with prompts on multimodal systems (e.g., reliability, architectures, applications). Each participant gives a brief response, followed by moderator input with accurate context and examples. This keeps everyone engaged, sparks peer learning, and ensures valuable takeaways.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Events Section -->
+            <div class="schedule-detail-section">
+                <h3 class="detail-section-title">Social Events</h3>
+                <div class="detail-content">
+                    <div class="activity-day">
+                        <h4>Day 1 (5:30–7:00 PM): UCSD Tour</h4>
+                        <p>UCSD tour, including optional visit to the Sandbox Facility (microscopes + multimodal collaborations).</p>
+                    </div>
+                    
+                    <div class="activity-day">
+                        <h4>Day 2 (5:30–7:00 PM): Sunset Walk and Ice Cream</h4>
+                        <p>Informal sunset walk and ice cream at La Jolla beach.</p>
+                    </div>
+                    
+                    <div class="activity-day">
+                        <h4>Day 3 (5:30–7:00 PM): Awards Ceremony and Dinner Reception</h4>
+                        <p>The final day of AIMS2026 will conclude with a hackathon awards ceremony, featuring dynamic short demos, results presentations, and live audience voting, followed by the presentation of awards and special gifts. The workshop will then close with an evening dinner reception, creating a welcoming and celebratory atmosphere for participants to network, exchange ideas, and strengthen cross-disciplinary connections formed throughout the workshop.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section">
+        <div class="container">
+            <h2 class="section-title">Registration</h2>
+            <p class="lead">Register using the official AIMS 2026 registration form.</p>
+            <div class="registration-cta">
+                <span class="btn btn-outline btn-cta btn-disabled" aria-disabled="true">Registration Opening Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="section">
+        <div class="container">
+            <h2 class="section-title">Speakers</h2>
+            <p class="section-subtitle">Distinguished researchers and practitioners in AI and multimodal science</p>
+            
+            <!-- Day 1 Speakers -->
+            <div class="speakers-day-section">
+                <h3 class="speakers-day-title">Day 1 Speakers</h3>
+                <div class="speakers-grid">
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>Speaker 1</h3>
+                        <p class="speaker-title">To be determined</p>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>Speaker 2</h3>
+                        <p class="speaker-title">To be determined</p>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>Speaker 3</h3>
+                        <p class="speaker-title">To be determined</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 Speakers -->
+            <div class="speakers-day-section">
+                <h3 class="speakers-day-title">Day 2 Speakers</h3>
+                <div class="speakers-grid">
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>Speaker 4</h3>
+                        <p class="speaker-title">To be determined</p>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>Speaker 5</h3>
+                        <p class="speaker-title">To be determined</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 Speakers -->
+            <div class="speakers-day-section">
+                <h3 class="speakers-day-title">Day 3 Speakers</h3>
+                <div class="speakers-grid">
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>Speaker 6</h3>
+                        <p class="speaker-title">To be determined</p>
+                    </div>
+                    <div class="speaker-card">
+                        <div class="speaker-avatar">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>Speaker 7</h3>
+                        <p class="speaker-title">To be determined</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section id="venue" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Venue</h2>
+            <div class="venue-content">
+                <div class="venue-info">
+                    <h3>UC San Diego</h3>
+                    <p class="venue-address">
+                        University of California, San Diego<br>
+                        Seventh College – Tower West, 15th Floor, Room 15A<br>
+                        10176 Scholars Drive<br>
+                        La Jolla, CA 92093<br>
+                        USA
+                    </p>
+                    <div class="venue-details">
+                        <p>
+                            The workshop will be held at UC San Diego, one of the world's leading public research universities. 
+                            The campus provides state-of-the-art facilities and a vibrant academic environment for 
+                            interdisciplinary collaboration.
+                        </p>
+                    </div>
+                    <div class="venue-links">
+                        <a href="https://www.ucsd.edu" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            Visit UCSD Website
+                        </a>
+                        <a href="https://maps.google.com/?q=10176+Scholars+Drive,+La+Jolla,+CA+92093" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            View on Map
+                        </a>
+                    </div>
+                </div>
+                <div class="venue-map">
+                    <iframe 
+                        src="https://www.google.com/maps?q=10176+Scholars+Drive,+La+Jolla,+CA+92093&output=embed&zoom=15" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="UC San Diego - Seventh College, Tower West, Room 15A">
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Virtual Tour Section -->
+            <div class="venue-virtual-tour">
+                <h3>Virtual Tour of Room 15A</h3>
+                <p class="virtual-tour-description">Explore the workshop venue with our interactive 360° virtual tour</p>
+                <div class="virtual-tour-container">
+                    <iframe 
+                        src="https://www.bakersman.com/uv/ucsd/360_15A/" 
+                        width="100%" 
+                        height="600" 
+                        style="border:0; border-radius: 10px; box-shadow: var(--shadow);" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="360° Virtual Tour of Room 15A">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="section">
+        <div class="container">
+            <h2 class="section-title">Organizing Committee</h2>
+            
+            <!-- Lead Organizers Section -->
+            <div class="organizers-section">
+                <div class="organizers-grid organizers-grid--lead">
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <img src="images/organizers/Yasmin Kassim.png" alt="Yasmin Kassim">
+                        </div>
+                        <h3>Yasmin Kassim</h3>
+                        <p class="organizer-title">Executive Lead Organizer<br>Scientific Program & Overall Coordination<br>Schmidt AI in Science Fellow, Postdoctoral Scholar, University of California, San Diego</p>
+                        <div class="organizer-links">
+                            <a href="#" class="bio-link" data-bio="yasmin">Biography</a>
+                            <a href="https://www.linkedin.com/in/yasmin-kassim-3187ab18b/" class="linkedin-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <img src="images/organizers/Uri Manor.png" alt="Uri Manor">
+                        </div>
+                        <h3>Uri Manor</h3>
+                        <p class="organizer-title">Senior Scientific Advisor, Faculty Engagement & Partnerships Lead<br>Assistant Professor<br>Dr. David V. Goeddel Chancellor’s Endowed Chair, University of California, San Diego</p>
+                        <div class="organizer-links">
+                            <a href="#" class="bio-link" data-bio="uri">Biography</a>
+                            <a href="https://www.linkedin.com/in/urimanor/" class="linkedin-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <img src="images/organizers/Xiaoyu Zhao.png" alt="Xiaoyu Zhao">
+                        </div>
+                        <h3>Xiaoyu Zhao</h3>
+                        <p class="organizer-title">Communications & Registration Lead<br>Schmidt Fellow<br>Postdoctoral Scholar, University of California, San Diego</p>
+                        <div class="organizer-links">
+                            <a href="#" class="bio-link" data-bio="xiaoyu">Biography</a>
+                            <a href="https://www.linkedin.com/in/xiaoyu-zhao-9b775b103/" class="linkedin-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <img src="images/organizers/Eleonora Rachtman.png" alt="Eleonora Rachtman">
+                        </div>
+                        <h3>Eleonora Rachtman</h3>
+                        <p class="organizer-title">Tutorials & Materials Lead<br>Schmidt Fellow<br>Postdoctoral Scholar, University of California, San Diego</p>
+                        <div class="organizer-links">
+                            <a href="#" class="bio-link" data-bio="eleonora">Biography</a>
+                            <a href="https://www.linkedin.com/in/eleonora-rachtman-phd-b32ba722/" class="linkedin-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <img src="images/organizers/Konstantinos Polyzos.png" alt="Konstantinos Polyzos">
+                        </div>
+                        <h3>Konstantinos Polyzos</h3>
+                        <p class="organizer-title">Hackathon & Data Lead<br>Schmidt Fellow<br>Postdoctoral Scholar, University of California, San Diego</p>
+                        <div class="organizer-links">
+                            <a href="#" class="bio-link" data-bio="konstantinos">Biography</a>
+                            <a href="https://www.linkedin.com/in/konstantinospolyzos-a441a4148/" class="linkedin-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="" aria-hidden="true">
+                        </div>
+                        <h3>Tommie Velasquez</h3>
+                        <p class="organizer-title">Event Logistics & Administrative Coordination<br>University of California, San Diego Staff</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acknowledgments Section -->
+    <section class="section acknowledgments">
+        <div class="container">
+            <div class="acknowledgments-content">
+                <h3>Funding</h3>
+                <div class="funding-content">
+                    <p>This workshop is sponsored by <strong>Schmidt Sciences</strong> in partnership with <strong>University of California San Diego</strong>.</p>
+                    <img src="images/shmidtlogo.png" alt="Schmidt Sciences Logo" class="schmidt-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutional Support Section -->
+    <section class="section institutional-support">
+        <div class="container">
+            <div class="institutional-support-content">
+                <h3>Institutional Support</h3>
+                <div class="support-logos">
+                    <img src="images/sandbox_logo.jpg" alt="Technology Sandbox Logo" class="support-logo">
+                    <img src="images/PDA_logo.png" alt="UC San Diego Postdoctoral Association Logo" class="support-logo">
+                </div>
+                <p>This workshop is supported by the UC San Diego Postdoctoral Association (PDA) Executive Board and the Goeddel Family Technology Sandbox.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AIMS 2026</h3>
+                    <p>AI for Multimodal Science</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Workshop</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#schedule">Schedule</a></li>
+                            <li><a href="#registration">Registration</a></li>
+                            <li><a href="#speakers">Speakers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#venue">Venue</a></li>
+                            <li><a href="#organizers">Organizers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AIMS Workshop. Organized by UC San Diego. Sponsored by Schmidt Sciences.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Biography Modals -->
+    <!-- Yasmin Kassim Modal -->
+    <div id="bio-yasmin" class="bio-modal">
+        <div class="bio-modal-content">
+            <span class="bio-modal-close">&times;</span>
+            <h2>Yasmin Kassim</h2>
+            <div class="bio-text">
+                <p>Yasmin Kassim is a Schmidt AI in Science Fellow and postdoctoral researcher at UC San Diego specializing in biomedical image processing, computer vision, and deep learning. She previously worked at the NIH and Akoya Biosciences and earned a PhD in Computer Engineering from the University of Missouri–Columbia, receiving the 2017 Outstanding PhD Student Award (EECS). Across academia and industry, she builds rigorous AI tools and foundation models that convert images into quantitative insight and scalable measurements, reflected in awards and a strong publication record. Looking ahead with Schmidt, she will channel this momentum into next-generation AI models and tools for organelle analysis and dynamics. Dr. Kassim's STEM Mentor is Uri Manor, and her AI Co-Mentor is Marc Niethammer.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Uri Manor Modal -->
+    <div id="bio-uri" class="bio-modal">
+        <div class="bio-modal-content">
+            <span class="bio-modal-close">&times;</span>
+            <h2>Uri Manor</h2>
+            <div class="bio-text">
+                <p>Uri Manor received his Ph.D. with Dr. Bechara Kachar in the Cellular, Molecular, Developmental Biology and Biophysics program at Johns Hopkins University-NIH Graduate Partnership Program and conducted his postdoctoral work in the Lippincott-Schwartz lab at the NIH. He then joined the Salk Institute for Biological Studies as Director of the Waitt Advanced Biophotonics Core in 2016, where he was the recipient of the Chan-Zuckerberg Imaging Scientist Award. He then joined the UC San Diego faculty in 2023 as an Assistant Professor and Director of the Goeddel Family Technology Sandbox.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Xiaoyu Zhao Modal -->
+    <div id="bio-xiaoyu" class="bio-modal">
+        <div class="bio-modal-content">
+            <span class="bio-modal-close">&times;</span>
+            <h2>Xiaoyu Zhao</h2>
+            <div class="bio-text">
+                <p>Xiaoyu Zhao completed her PhD in cancer genomics at Stony Brook University. As a postdoctoral scholar in the Department of Medicine at UC San Diego, she is deeply interested in understanding the complex biological systems and human diseases by integrating genome editing technologies and artificial intelligence (AI) models. Her current focus is on developing deep learning models aimed at improving variant interpretation in the context of drug responses and disease progression. Dr. Zhao's STEM Mentor is Trey Ideker and her AI Co-Mentor is Vineet Bafna.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eleonora Rachtman Modal -->
+    <div id="bio-eleonora" class="bio-modal">
+        <div class="bio-modal-content">
+            <span class="bio-modal-close">&times;</span>
+            <h2>Eleonora Rachtman</h2>
+            <div class="bio-text">
+                <p>Eleonora Rachtman earned her PhD in Bioinformatics and Systems Biology from UC San Diego and is now a postdoctoral scholar in Electrical and Computer Engineering. She develops algorithms to analyze big genomic datasets and infer evolutionary relationships between species. Her postdoctoral work focuses on incorporating deep learning into phylogenomic analysis, specifically by developing machine learning algorithms to add new species to large phylogenies without reconstructing them from scratch. This approach enhances existing binning and species identification techniques and aims to address challenges in bacterial and viral metagenomics, improving pathogen detection, understanding microbial diversity, and unraveling evolutionary dynamics of various species. Dr. Rachtman's STEM and AI Mentors are Siavash Mirarab & Davey Smith.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konstantinos Polyzos Modal -->
+    <div id="bio-konstantinos" class="bio-modal">
+        <div class="bio-modal-content">
+            <span class="bio-modal-close">&times;</span>
+            <h2>Konstantinos D. Polyzos</h2>
+            <div class="bio-text">
+                <p>Konstantinos D. Polyzos is a Postdoctoral Fellow at the Electrical and Computer Engineering department (ECE) at University of California San Diego having recently obtained his Ph.D at the ECE department at the University of Minnesota. His research focuses on learning, inferring and optimizing with just a few data. Specifically, he has been developing and leveraging active-, transfer-, and self-supervised learning and Bayesian optimization methods to learn and/or optimize when only a few input-output data are available due to privacy concerns or high sampling costs, with application to healthcare, 5G networks and robotics. Dr. Polyzos' STEM and AI Mentor is Tara Javidi.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
