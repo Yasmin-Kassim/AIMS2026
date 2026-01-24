@@ -69,6 +69,17 @@ body {
     gap: 2rem;
 }
 
+.nav-logo-item {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.nav-ucsd-logo {
+    height: 40px;
+    width: auto;
+}
+
 .nav-menu a {
     text-decoration: none;
     color: var(--text-dark);
@@ -1198,6 +1209,10 @@ body {
 
     .nav-toggle {
         display: flex;
+    }
+
+    .nav-ucsd-logo {
+        height: 32px;
     }
 
     .hero-title {
