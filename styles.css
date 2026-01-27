@@ -61,6 +61,7 @@ body {
 .nav-logo {
     height: 92px;
     width: auto;
+    margin-right: 1.5rem;
 }
 
 .nav-menu {
@@ -76,7 +77,12 @@ body {
 }
 
 .nav-ucsd-logo {
-    height: 40px;
+    height: 60px;
+    width: auto;
+}
+
+.nav-schmidt-logo {
+    height: 60px;
     width: auto;
 }
 
@@ -1212,7 +1218,11 @@ body {
     }
 
     .nav-ucsd-logo {
-        height: 32px;
+        height: 48px;
+    }
+
+    .nav-schmidt-logo {
+        height: 48px;
     }
 
     .hero-title {
