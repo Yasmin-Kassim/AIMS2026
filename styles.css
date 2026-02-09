@@ -559,8 +559,8 @@ body {
 }
 
 .speaker-avatar {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     margin: 0 auto 1.5rem;
     border-radius: 50%;
     background: var(--bg-light);
@@ -568,6 +568,14 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
+    overflow: hidden;
+}
+
+.speaker-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .speaker-card h3 {
@@ -578,6 +586,20 @@ body {
 .speaker-title {
     color: var(--text-light);
     font-size: 0.95rem;
+}
+
+.speaker-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.speaker-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
 }
 
 .note {
@@ -1119,13 +1141,18 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
     margin-bottom: 1.5rem;
 }
 
 .support-logo {
-    max-width: 300px;
+    max-width: 260px;
     height: auto;
+}
+
+.support-logo--pda {
+    max-width: 320px;
 }
 
 .institutional-support p {
@@ -1305,8 +1332,16 @@ body {
         font-size: 1.1rem;
     }
 
+    .support-logos {
+        flex-wrap: wrap;
+    }
+
     .support-logo {
         max-width: 220px;
+    }
+
+    .support-logo--pda {
+        max-width: 260px;
     }
 
     .institutional-support p {
