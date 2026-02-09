@@ -1274,6 +1274,25 @@ body {
         gap: 1rem;
     }
 
+    .speakers-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .speaker-card {
+        padding: 1.5rem;
+    }
+
+    .speaker-avatar {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 1rem;
+    }
+
+    .speaker-card h3 {
+        font-size: 1.2rem;
+    }
+
     .detail-section-title {
         font-size: 1.6rem;
     }
