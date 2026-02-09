@@ -1293,6 +1293,17 @@ body {
         font-size: 1.2rem;
     }
 
+    /* Organizers: stack one per row on mobile only */
+    .organizers-grid--lead {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    .organizers-grid--lead .organizer-card {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
     .detail-section-title {
         font-size: 1.6rem;
     }
