@@ -559,8 +559,8 @@ body {
 }
 
 .speaker-avatar {
-    width: 160px;
-    height: 160px;
+    width: 190px;
+    height: 190px;
     margin: 0 auto 1.5rem;
     border-radius: 50%;
     background: var(--bg-light);
@@ -575,7 +575,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
+}
+
+.speaker-avatar-top img {
+    object-position: center top;
 }
 
 .speaker-card h3 {
@@ -588,6 +593,13 @@ body {
     font-size: 0.95rem;
 }
 
+.speaker-bio {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0.75rem 0 0.5rem;
+}
+
 .speaker-link {
     display: inline-block;
     margin-top: 0.5rem;
@@ -595,6 +607,10 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
+}
+
+.speaker-link + .speaker-link {
+    margin-left: 0.75rem;
 }
 
 .speaker-link:hover {
@@ -1284,8 +1300,8 @@ body {
     }
 
     .speaker-avatar {
-        width: 140px;
-        height: 140px;
+        width: 170px;
+        height: 170px;
         margin-bottom: 1rem;
     }
 
