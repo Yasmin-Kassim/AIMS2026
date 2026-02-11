@@ -580,7 +580,7 @@ body {
 }
 
 .speaker-avatar-top img {
-    object-position: center top;
+    object-position: 55% top;
 }
 
 .speaker-card h3 {
