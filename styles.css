@@ -551,8 +551,11 @@ body {
     margin-bottom: 0.4rem;
 }
 
-.activity-speaker--no-photo {
-    padding-left: calc(140px + 1rem);
+.activity-speaker-duo {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-shrink: 0;
 }
 
 .schedule-overview {
