@@ -506,6 +506,26 @@ body {
     margin-bottom: 0.75rem;
 }
 
+.schedule-line-date,
+.schedule-line-title {
+    display: block;
+}
+
+.activity-day h4 .schedule-line-date {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 0.35rem;
+    line-height: 1.4;
+}
+
+.activity-day h4 .schedule-line-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.35;
+}
+
 .activity-day p {
     color: var(--text-light);
     line-height: 1.8;
@@ -531,6 +551,10 @@ body {
     margin-bottom: 0.4rem;
 }
 
+.activity-speaker--no-photo {
+    padding-left: calc(140px + 1rem);
+}
+
 .schedule-overview {
     max-width: 900px;
     margin: 0 auto;
@@ -549,12 +573,25 @@ body {
 }
 
 .speakers-day-title {
-    font-size: 1.8rem;
-    color: var(--primary-color);
     margin-bottom: 2rem;
     text-align: center;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--border-color);
+}
+
+.speakers-day-title .schedule-line-date {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 0.45rem;
+    line-height: 1.35;
+}
+
+.speakers-day-title .schedule-line-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.25;
 }
 
 .speakers-grid {
@@ -1338,8 +1375,12 @@ body {
         padding: 1.5rem;
     }
 
-    .activity-day h4 {
+    .activity-day h4 .schedule-line-title {
         font-size: 1.1rem;
+    }
+
+    .activity-day h4 .schedule-line-date {
+        font-size: 0.95rem;
     }
 
     .venue-content {
