@@ -488,6 +488,25 @@ body {
     font-weight: 600;
 }
 
+.hackathon-pc-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.hackathon-pc-figure {
+    margin: 0;
+}
+
+.hackathon-pc-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
 .activity-day {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -1396,6 +1415,10 @@ body {
         padding: 1.5rem;
     }
 
+    .hackathon-pc-gallery {
+        grid-template-columns: 1fr;
+    }
+
     .activity-day h4 .schedule-line-title {
         font-size: 1.1rem;
     }
@@ -1430,6 +1453,48 @@ body {
 
     .container {
         padding: 0 1rem;
+    }
+
+    /* Organizing committee: desktop 3×2 grid + min-width avatars overflow narrow viewports (iOS Safari) */
+    .organizers-grid--lead {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .organizers-grid--lead .organizer-card:nth-child(1),
+    .organizers-grid--lead .organizer-card:nth-child(2),
+    .organizers-grid--lead .organizer-card:nth-child(3),
+    .organizers-grid--lead .organizer-card:nth-child(4),
+    .organizers-grid--lead .organizer-card:nth-child(5),
+    .organizers-grid--lead .organizer-card:nth-child(6) {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .organizer-card {
+        min-height: auto;
+        min-width: 0;
+        width: 100%;
+        max-width: min(400px, 100%);
+        box-sizing: border-box;
+    }
+
+    .organizer-avatar {
+        width: min(220px, 100%);
+        max-width: 100%;
+        aspect-ratio: 1;
+        height: auto;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .organizer-avatar img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .organizers-section-title {
+        font-size: 1.5rem;
     }
 }
 
