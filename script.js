@@ -77,9 +77,11 @@ if (heroScroll) {
 }
 
 // Fade in animation on scroll
+// Use threshold 0: tall sections (e.g. #schedule) often have <10% of their total height
+// visible at once on mobile, so threshold 0.1 never fired and the whole block stayed opacity:0.
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0,
+    rootMargin: '0px 0px 0px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
