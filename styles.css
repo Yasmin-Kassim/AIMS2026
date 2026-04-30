@@ -722,6 +722,24 @@ body {
     margin-top: 2rem;
 }
 
+/* Travel & Lodging */
+.lodging-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.lodging-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.lodging-content .venue-address {
+    color: var(--text-dark);
+}
+
 /* Venue Section */
 .venue-content {
     display: grid;
