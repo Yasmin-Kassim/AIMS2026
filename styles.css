@@ -747,6 +747,56 @@ body {
     color: var(--text-dark);
 }
 
+.shuttle-info {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.shuttle-info h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.shuttle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.shuttle-day {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.shuttle-day h4 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 1.25rem;
+}
+
+.shuttle-trip + .shuttle-trip {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.shuttle-trip h5 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.shuttle-day p {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
 /* Venue Section */
 .venue-content {
     display: grid;
@@ -987,6 +1037,10 @@ body {
     .organizers-grid--lead .organizer-card:nth-child(5),
     .organizers-grid--lead .organizer-card:nth-child(6) {
         grid-row: 2 !important;
+    }
+
+    .shuttle-grid {
+        grid-template-columns: 1fr;
     }
 }
 
